@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a {
+  color: white;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: black; 
+    color: white; 
+  }
+  
+  header {
+    text-align: left;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(191,38,0,1) 100%);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+  } 
+  
+  li {
+    list-style: none;
+  }
+  
+  .navbar {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  
+  nav a {
+    margin: 20px;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: red;
+    color: black;
+    transition: all 1s;
+  }
+
+.logo{
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: xx-large;
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+.logo img {
+  width: 100px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight:500;
+  
+  vertical-align: middle;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.titulo {
+  
+  background-image: url('/css/img/futurismo1.jpeg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+
+} 
+
+
+.obrashome {
+  display: flex;
+  flex-flow: wrap;
+
+}
+
+.obrashome div {
+  width: 29%;
+  margin: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.obrashome div img {
+  width: 100%;
+  transition-duration: 1s; 
+    transition-property: all;
+}
+
+.obrashome img:hover {
+  transform: scale(1.5) rotate(1turn); 
+  transform-origin: center;
+}
+
+.frase {
+  text-align: center;
+  align-items: center;
+  
+  background-image: url('/css/img/ciclista.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.frase h3 {
+  margin: 40px;
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: xx-large;
+
+}
+
+
+.historia1 {
+  display: flex;
+  flex-flow: wrap;
+  color: white;
+}
+.historia1 div {
+  width: 40%;
+  margin: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  line-height: 2em;
+  font-size: large;
+ 
+
+}
+.historia1 div img {
+  width: 100%;
+  max-height: 450px;
+}
+
+.historia2 {
+  display: flex;
+  flex-flow: wrap;
+  color: white;
+}
+.historia2 div {
+  width: 40%;
+  margin: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  line-height: 2em;
+  font-size: large;
+  
+}
+.historia2 div img {
+  width: 100%;
+}
+
+.historia3 {
+  display: flex;
+  flex-flow: wrap;
+  color: white;
+}
+.historia3 div {
+  width: 40%;
+  margin: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  line-height: 2em;
+  font-size: large;
+}
+.historia3 div img {
+  width: 100%;
+}
+
+.card-contenedor1 {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-imagen1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px; 
+  object-fit: cover;
+  margin-right: 20px; 
+}
+
+.card-contenido1 {
+  flex: 1;
+}
+
+.card-titulo1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: black; 
+}
+
+.card-descripcion1 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: black; 
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  gap: 20px;
+}
+
+.contenedor-imagen {
+  width: calc(33% - 10px); /* 33% el ancho de la galería con un espacio de 10px entre imágenes */
+  
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.imagen {
+  max-width: 100%;
+  border-radius: 8px;
+  transition-duration: 1s; 
+    transition-property: all;
+}
+
+.descripcion {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.contenedor-imagen img:hover {
+  transform: scale(1.5) rotate(1turn); 
+  transform-origin: center;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta {
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.tarjeta h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: black;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.imageform {
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.form-contacto {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-espacio {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 14px;
+}
