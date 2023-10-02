@@ -92,7 +92,7 @@ h2 {
 
 .titulo {
   
-  background-image: url('/css/img/futurismo1.jpeg') ;
+  background-image: url('./img/futurismo1.jpeg') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@ h2 {
   text-align: center;
   align-items: center;
   
-  background-image: url('/css/img/ciclista.jpeg');
+  background-image: url('./img/ciclista.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
